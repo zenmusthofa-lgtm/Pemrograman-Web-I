@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <p>Klik tombol berikut untuk menampilkaan konfirmasi</p>
+        <button onclick="myFunction()">Klik Di sini</button>
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var x;
+                var r=confirm("Apakah anda ingin melanjutkan?");
+                if (r==true) {
+                    x="Anda menekan OK!";
+                } else {
+                    x="Anda menekan Cancel!";
+                }
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+    </body>
+</html>
